@@ -5,8 +5,8 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 import Message from './Message'
 import SignOut from './SignOut'
 const Chat=()=>{
-    const messagesCollection = database.collection('messages');
-    const queryToBase = messagesCollection.orderBy('createdAt').limitToLast(25);
+    const messagesCollection = database.collection('messages1');
+    const queryToBase = messagesRef.orderBy('createdAt').limitToLast(25);
     const [messages] = useCollectionData (queryToBase, {idField: 'id'});
     const [formValue, setFormValue] = useState('');
 

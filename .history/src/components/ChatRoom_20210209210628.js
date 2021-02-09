@@ -5,16 +5,16 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 import Message from './Message'
 import SignOut from './SignOut'
 const Chat=()=>{
-    const messagesCollection = database.collection('messages');
-    const queryToBase = messagesCollection.orderBy('createdAt').limitToLast(25);
-    const [messages] = useCollectionData (queryToBase, {idField: 'id'});
+    const messagesRef = database.collection('messages');
+    const query = messagesRef.orderBy('createdAt').limitToLast(25);
+    const [messages] = useCollectionData (query, {idField: 'id'});
     const [formValue, setFormValue] = useState('');
 
     const sendMessage=async (e)=>{
         e.preventDefault()
         const { uid, photoURL, displayName } = auth.currentUser
 
-        await messagesCollection.add({
+        await messagesRef.add({
           text: formValue,
           createdAt: firebase.firestore.FieldValue.serverTimestamp(),
           uid,
