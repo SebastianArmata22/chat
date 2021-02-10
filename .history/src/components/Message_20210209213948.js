@@ -1,10 +1,9 @@
 import React from 'react'
 
-const Message = (message)=>{
-    console.log(message.value)
+const Message = async (message)=>{
     return(
         <div>
-            <img src={message.value.photoURL} alt='profile Image'></img>
+            <img await src={message.value.photoURL} alt='profile Image'></img>
             <p>{message.value.displayName}</p>
             <p>{message.value.text}</p>
         </div>

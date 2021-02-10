@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Message = (message)=>{
-    console.log(message.value)
     return(
         <div>
             <img src={message.value.photoURL} alt='profile Image'></img>

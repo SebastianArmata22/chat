@@ -1,9 +1,9 @@
 import React from 'react'
-import {database} from "../firebase/firebase";
+import { database} from "../firebase/firebase";
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import Message from './Message'
+import SignOut from './SignOut'
 import MessageForm from './MessageForm'
-import User from './User';
 
 const ChatRoom=()=>{
     const messagesCollection = database.collection('messages');
@@ -11,9 +11,7 @@ const ChatRoom=()=>{
     const [messages] = useCollectionData (queryToBase, {idField: 'id'});
     return(
         <div>
-            <div>
-                <User/>
-            </div>
+            <SignOut/>
             <div>
                 {messages && messages.map(message=><Message key={message.id} value={message}/>)}
             </div>

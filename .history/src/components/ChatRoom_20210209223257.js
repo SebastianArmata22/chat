@@ -1,22 +1,18 @@
-import React from 'react'
-import {database} from "../firebase/firebase";
+import React, { useState } from 'react'
+import { database, auth } from "../firebase/firebase";
+import firebase from '../firebase/firebase'
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import Message from './Message'
-import MessageForm from './MessageForm'
-import User from './User';
+import SignOut from './SignOut'
 
-const ChatRoom=()=>{
+const Chat=()=>{
     const messagesCollection = database.collection('messages');
     const queryToBase = messagesCollection.orderBy('createdAt').limitToLast(25);
     const [messages] = useCollectionData (queryToBase, {idField: 'id'});
     return(
         <div>
-            <div>
-                <User/>
-            </div>
-            <div>
-                {messages && messages.map(message=><Message key={message.id} value={message}/>)}
-            </div>
+            <SignOut/>
+            <div>{messages && messages.map(message=><Message key={message.id} value={message}/>)}</div>
             <div>
                 <MessageForm messagesCollection={messagesCollection}/>
             </div>
@@ -24,4 +20,4 @@ const ChatRoom=()=>{
         </div>
     )
 }
-export default ChatRoom
+export default Chat

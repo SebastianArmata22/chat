@@ -4,7 +4,6 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import ChatRoom from "./components/ChatRoom";
 import SignIn from './components/SignIn'
 import ThemeContextProvider from './context/ThemeContext';
-import ToogleTheme from './components/ToggleTheme';
 
 function App() {
   const [userIsLogged]=useAuthState(auth)
@@ -13,7 +12,7 @@ function App() {
       <div className="App">
         <div>
           <p>Chat Room</p>
-          <ToogleTheme/>
+          <button></button>
         </div>
         <div>
           {userIsLogged ? <ChatRoom/> : <SignIn/>}
