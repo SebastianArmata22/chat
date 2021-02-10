@@ -1,0 +1,7 @@
+@mixin flex-container {
+    display: flex;
+}
+
+.chat-room-container{
+    @include flex-container;
+}

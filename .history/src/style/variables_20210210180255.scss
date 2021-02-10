@@ -1,0 +1,7 @@
+$color:  #696969;
+
+@mixin flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

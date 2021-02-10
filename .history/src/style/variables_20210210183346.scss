@@ -1,0 +1,8 @@
+$color:  #696969;
+$color-bg-tiitle: #006266;
+
+@mixin flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

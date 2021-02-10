@@ -1,0 +1,9 @@
+@mixin flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-room-container{
+    @include flex-container;
+}

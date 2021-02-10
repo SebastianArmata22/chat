@@ -1,0 +1,59 @@
+@import '../style/variables.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    height: 100vh;
+}
+.app-container{
+    width: 50rem;
+}
+.chat-room-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: $color;
+}
+.tittle-container{
+    background-color: $color-bg-tiitle;
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-container{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-user;
+    img{
+        height: 40px;
+        border-radius: 20px;
+    }
+
+}
+.messages-container{
+    width: 100%;
+    height: 70vh;
+    overflow: auto;
+}
+.form-container{
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    form{
+        width: 100%;
+        height: 10vh;
+    }
+}
