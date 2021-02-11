@@ -16,7 +16,7 @@ const ChatRoom=()=>{
     const myRef = useRef(null)
     useEffect(()=>{
         myRef.current.scrollIntoView()
-    })
+    },[MessageForm])
     return(
         <div className='chat-room-container'>
             <div className={isDarkMode? 'user-container dark': 'user-container light'}>

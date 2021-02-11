@@ -39,7 +39,7 @@
     height: -webkit-calc(100vh - 8rem);
     height: -moz-calc(100vh - 8rem);
     height: calc(100vh - 8rem);
-    overflow: auto;
+    overflow-y: scroll;
 }
 .form-container{
     position: absolute;
