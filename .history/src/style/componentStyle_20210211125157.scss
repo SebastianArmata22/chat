@@ -1,0 +1,101 @@
+@import '../style/variables.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.app-container{
+    width: 50rem;
+}
+.chat-room-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.user-container{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    img{
+        height: 40px;
+        border-radius: 20px;
+    }
+
+}
+.messages-container{
+    width: 100%;
+    height: 83vh;
+    overflow: auto;
+}
+.form-container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    form{
+        width: 100%;
+        input {
+            width: -webkit-calc(100% - 5rem);
+            width: -moz-calc(100% - 5rem);
+            width: calc(100% - 5rem);
+            height: 7vh;
+
+        }
+        button{
+            width: 5rem;
+            height: 7vh;
+        }
+    }
+
+}
+.messages-item{
+    display: flex;
+    align-items: center;
+    margin: 0.7rem;
+    img{
+        height: 40px;
+        border-radius: 20px;
+        margin: 0 0.5rem 0 0.5rem;
+    }
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        min-height: 40px;
+        padding: 0 1rem 0 1rem;
+        background-color: $color-container-message;
+    }
+}
+.sent{
+    flex-direction: row-reverse;
+    p{
+        background-color: $color-light-bg-msg;
+    }
+}
+
+.user-category{
+    display: flex;
+    align-items: center;
+    img{
+        margin-right: 1rem;
+    }
+    button{
+        margin-left: 1rem;
+    }
+}
+.dark{
+    background-color: $color-dark-bg-msg;
+    color: $color-dark-text;
+}

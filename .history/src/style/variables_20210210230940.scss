@@ -1,0 +1,15 @@
+$color:  #696969;
+$color-bg-tiitle: #006266;
+$color-user: #2b343b;
+$color-light-bg-user: #00b894;
+$color-dark-bg-user: #2c3e50;
+$color-ligt-font: #ffffff;
+$color-dark-font: #000000;
+$color-light-bg-msg: #ffffff;
+$color-dark-bg-msg: #34495e;
+
+@mixin flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

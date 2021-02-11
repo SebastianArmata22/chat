@@ -1,0 +1,13 @@
+$color:  #696969;
+$color-bg-tiitle: #006266;
+$color-user: #2b343b;
+$color-light-bg-msg: #18dcff;
+$color-dark-bg-msg: #242526;
+$color-dark-text: #ffffff;
+$color-container-message: rgba(189, 195, 199,0.5);
+
+@mixin flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

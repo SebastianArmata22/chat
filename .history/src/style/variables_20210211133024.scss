@@ -1,0 +1,14 @@
+
+$color-light-bg-msg: #3498db;
+$color-dark-bg-msg: #242526;
+$color-dark-text: #ffffff;
+$color-container-message: rgba(189, 195, 199,0.5);
+
+@mixin flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin animation{
+    transition: all 1.5s;
+}
