@@ -90,8 +90,7 @@
         @include flex-container;
         border-radius: 20px;
         min-height: 40px;
-        padding: 0.5rem;
-        max-width: 50%;
+        padding: 1rem;
         background-color: $color-container-message;
     }
 }
