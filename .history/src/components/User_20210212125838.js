@@ -12,7 +12,7 @@ const User= ()=>{
         <>
             <div className='user-category'>
                 <img src={user.photoURL}></img>
-                <h3>Hello {user.displayName!==null ? user.displayName.split(" ")[0] : 'user'}</h3>
+                <h3>Hello {user.displayName!==null ? user.displayName.split(" ")[0] : user.email}</h3>
             </div>
             <div className='user-category'>
                 <ToogleTheme/>

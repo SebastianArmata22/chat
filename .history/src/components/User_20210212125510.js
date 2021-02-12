@@ -7,12 +7,11 @@ import '../style/componentStyle.scss'
 
 const User= ()=>{
     const user=auth.currentUser
-    console.log(user)
     return(
         <>
             <div className='user-category'>
                 <img src={user.photoURL}></img>
-                <h3>Hello {user.displayName!==null ? user.displayName.split(" ")[0] : 'user'}</h3>
+                <h3>Hello {user.displayName.split(" ")[0] || ''}</h3>
             </div>
             <div className='user-category'>
                 <ToogleTheme/>

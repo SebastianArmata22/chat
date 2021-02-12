@@ -137,9 +137,9 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    &:hover img{
-        transform: rotate(360deg);
-        transition: 2s;
+    &:hover > img{
+        transform: img rotate(360deg);
+        transition: 3s;
     }
     img{
         height: 25px;

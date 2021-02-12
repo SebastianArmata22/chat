@@ -137,13 +137,13 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    &:hover img{
-        transform: rotate(360deg);
-        transition: 2s;
-    }
     img{
         height: 25px;
         margin: 0 1rem 0 1rem;
+        &:hover{
+        transform: rotate(180deg);
+        transition: 3s;
+        }
     }
 }
 .login-btn-container{

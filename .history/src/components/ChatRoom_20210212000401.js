@@ -14,9 +14,10 @@ const ChatRoom=()=>{
     const [messages] = useCollectionData (queryToBase, {idField: 'id'});
     const {isDarkMode}=useContext(ThemeContext)
     const lastMessage = useRef(null)
+    const firstMessage = useRef(null)
     useEffect(()=>{
         lastMessage.current.scrollIntoView()
-    },[messages])
+    })
     return(
         <div className='chat-room-container'>
             <div className={isDarkMode? 'user-container dark': 'user-container light'}>
