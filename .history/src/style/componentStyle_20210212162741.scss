@@ -7,7 +7,7 @@
 .app{
     @include flex-container;
     max-width: 100%;
-    min-height: 100vh;
+    height: 100vh;
 }
 .logout-btn{
     img{
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
 }
 .user-container{
@@ -140,12 +140,12 @@
     background-color: $color-light-input-message;
 }
 .login-container{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-color: $color-login;
     @include flex-container;
     div{
-        min-height: 100vh;
+        height: 100vh;
         @include flex-container;
         flex-direction: column;
     }
