@@ -197,14 +197,12 @@
 @media only screen and (max-width: 600px) {
     .login-container{
         display: block;
-
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
     }
     .conversation-img{
         width: 100%;
         max-height: 20vh;
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
-        top: 0;
         img{
             height: 5rem;
         }

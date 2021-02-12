@@ -18,7 +18,6 @@ const SignIn=()=>{
     return(
         <div className='login-container'>
             <div className='conversation-img'>
-                <h1>CHAT ROOM</h1>
                 <img src={conversation} alt='ff'></img>
 
             </div>

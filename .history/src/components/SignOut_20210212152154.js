@@ -8,8 +8,8 @@ const LogOut= ()=>{
         auth.currentUser && auth.signOut()
     }
     return(
-        <button className='logout-btn' onClick={logout}>
-            <img src={signoutImg}/>
+        <button onClick={logout}>
+            <img src={signoutImg} height='10px'/>
         </button>
     )
 }

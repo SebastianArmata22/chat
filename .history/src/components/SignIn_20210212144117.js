@@ -16,13 +16,12 @@ const SignIn=()=>{
         auth.signInWithPopup(providerfacebook)
     }
     return(
-        <div className='login-container'>
-            <div className='conversation-img'>
-                <h1>CHAT ROOM</h1>
-                <img src={conversation} alt='ff'></img>
+        <div className='login-btn-container'>
+            <div>
+                <img src={conversation} alt=''></img>
 
             </div>
-            <div className='login-btn-container'>
+            <div>
                 <h1>Hello, log in to use chat </h1>
                 <button className='login-btn google-btn' onClick={signInWithGoogle}><img src={google} alt='g'></img><p>Sign in with Google</p></button>
                 <button className='login-btn github-btn' onClick={signInWithGitHub}><img src={github} alt='g'></img><p>Sign in with GitHub</p></button>

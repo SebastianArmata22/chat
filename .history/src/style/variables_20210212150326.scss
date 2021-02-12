@@ -9,9 +9,8 @@ $color-login: #192a56;
 $color-google: #eb4132;
 $color-github: #000000;
 $color-facebook: #1877f2;
-$color-backgroung-btn-login: #ffffff;
 
-@mixin flex-container {
+@mixin flexContainer {
     display: flex;
     align-items: center;
     justify-content: center;

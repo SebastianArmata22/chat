@@ -197,14 +197,10 @@
 @media only screen and (max-width: 600px) {
     .login-container{
         display: block;
-
     }
     .conversation-img{
         width: 100%;
         max-height: 20vh;
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
-        top: 0;
         img{
             height: 5rem;
         }
@@ -215,7 +211,6 @@
     .login-btn-container{
         width: 100%;
         border-top-right-radius: 1rem;
-        border-top-left-radius: 1rem;
         border-bottom-left-radius: 0;
     }
 }

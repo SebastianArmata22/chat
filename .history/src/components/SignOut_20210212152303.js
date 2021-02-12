@@ -9,7 +9,7 @@ const LogOut= ()=>{
     }
     return(
         <button className='logout-btn' onClick={logout}>
-            <img src={signoutImg}/>
+            <img src={signoutImg} height='10px'/>
         </button>
     )
 }
