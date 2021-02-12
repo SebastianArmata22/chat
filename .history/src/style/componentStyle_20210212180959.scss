@@ -56,6 +56,7 @@ body{
     height: calc(100vh - 8rem);
     overflow: auto;
     margin-top: 3.5rem;
+    scrollbar-color: #000000;
 }
 .form-container{
     width: 100%;
@@ -135,12 +136,6 @@ body{
 .dark{
     background-color: $color-dark-bg-msg;
     color: $color-dark-text;
-    @include animation;
-    scrollbar-color: $color-dark-bg-msg #141414;
-}
-.light{
-    background-color: $color-light-bg;
-    color: $color-light-text;
     @include animation;
 }
 .dark-input{

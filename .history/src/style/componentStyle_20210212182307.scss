@@ -137,11 +137,39 @@ body{
     color: $color-dark-text;
     @include animation;
     scrollbar-color: $color-dark-bg-msg #141414;
-}
-.light{
-    background-color: $color-light-bg;
-    color: $color-light-text;
-    @include animation;
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-button {
+        width: 0px;
+        height: 0px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #3e3e3e;
+        border: 0px solid transparent;
+        border-radius: 0px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #3e3e3e;
+    }
+    ::-webkit-scrollbar-track:hover {
+        background: transparent;
+    }
+    ::-webkit-scrollbar-thumb:active {
+        background: transparent;
+    }
+    ::-webkit-scrollbar-track:active {
+        background: transparent;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+        border: 0px none transparent;
+        border-radius: 0px;
+    }
+    ::-webkit-scrollbar-corner {
+        background: transparent;
+    }
 }
 .dark-input{
     background-color: $color-dark-input-message;

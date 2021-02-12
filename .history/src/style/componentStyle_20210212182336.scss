@@ -138,11 +138,6 @@ body{
     @include animation;
     scrollbar-color: $color-dark-bg-msg #141414;
 }
-.light{
-    background-color: $color-light-bg;
-    color: $color-light-text;
-    @include animation;
-}
 .dark-input{
     background-color: $color-dark-input-message;
     color: $color-dark-text;

@@ -139,7 +139,7 @@ body{
     scrollbar-color: $color-dark-bg-msg #141414;
 }
 .light{
-    background-color: $color-light-bg;
+    background-color: $color-light-bg-msg;
     color: $color-light-text;
     @include animation;
 }
