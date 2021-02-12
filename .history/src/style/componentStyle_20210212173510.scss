@@ -42,7 +42,6 @@ body{
     position: fixed;
     top: 0;
     padding: 1rem;
-    background-color: $color-dark-text;
     img{
         height: 40px;
         border-radius: 20px;
@@ -55,7 +54,6 @@ body{
     height: -moz-calc(100vh - 4.5rem);
     height: calc(100vh - 4.5rem);
     overflow: auto;
-    margin-top: 3.5rem;
 }
 .form-container{
     width: 100%;

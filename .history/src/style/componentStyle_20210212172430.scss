@@ -39,10 +39,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
     padding: 1rem;
-    background-color: $color-dark-text;
     img{
         height: 40px;
         border-radius: 20px;
@@ -51,11 +48,10 @@ body{
 }
 .messages-container{
     width: 100%;
-    height: -webkit-calc(100vh - 4.5rem);
-    height: -moz-calc(100vh - 4.5rem);
-    height: calc(100vh - 4.5rem);
+    height: -webkit-calc(100vh - 8rem);
+    height: -moz-calc(100vh - 8rem);
+    height: calc(100vh - 8rem);
     overflow: auto;
-    margin-top: 3.5rem;
 }
 .form-container{
     width: 100%;
